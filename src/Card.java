@@ -66,7 +66,7 @@
   public int getColor(){ 
     return color; 
   } 
-  public int getShading(){ 
+  public int getShading(){ // This should not give me any errors
     return shading; 
   } 
   public int getShape(){ 
