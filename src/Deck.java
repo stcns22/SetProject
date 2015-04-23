@@ -10,13 +10,18 @@ public class Deck {
   private int nextCardIndex;
   
   public Deck(){
-   cards= new ArrayList<Card>(81);
-   
-   //nested loops
-   
-   
-   Collections.shuffle(cards);
+    for (int carrd1=1; carrd1<=3; carrd1++){
+      for (int carrd2=1; carrd2 <=3; carrd2++){
+        for (int carrd3=1; carrd3 <=3; carrd3++){
+          for (int carrd4=1; carrd4 <=3; carrd4++){
+            cards.add(new Card(carrd1, carrd2, carrd3,carrd4));
+          }
+        }
+      }
+    }
+  nextCardIndex=0;
   }
+  
     public Deck (String filename) {
     cards = new ArrayList<Card>(81);
     
