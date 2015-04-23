@@ -10,14 +10,18 @@ public class Deck {
   private int nextCardIndex;
   
   public Deck(){
+   cards= new ArrayList<Card>(81);
    
-   Deck d = new Deck();
+   //nested loops
    
+   
+   Collections.shuffle(cards);
   }
     public Deck (String filename) {
     cards = new ArrayList<Card>(81);
     
     try{
+      
       String line;
       BufferedReader infile = new BufferedReader(new FileReader(filename));
       int position = 0;
